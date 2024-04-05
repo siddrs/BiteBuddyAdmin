@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/secondaryContainer"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        android:elevation="3dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView9"
+                android:backgroundTint="@color/background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:elevation="0dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/orderFoodItemImage"
+                    android:elevation="0dp"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/food_placeholder1" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="151dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="CUSTOMER NAME"
+                android:textAllCaps="true"
+                android:textColor="@color/primaryContainer_highContrast"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/cardView9"
+                app:layout_constraintTop_toTopOf="@+id/cardView9" />
+
+            <TextView
+                android:id="@+id/foodQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center_vertical"
+                android:text="Total Price"
+                android:textAllCaps="true"
+                android:textColor="@color/primaryContainer_highContrast"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/cardView9"
+                app:layout_constraintTop_toBottomOf="@+id/customerName" />
+
+            <TextView
+                android:id="@+id/foodQuantityIndicatorDigit"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center_vertical"
+                android:text="8"
+                android:textColor="@color/primaryContainer_highContrast"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/foodQuantity"
+                app:layout_constraintStart_toEndOf="@+id/foodQuantity"
+                app:layout_constraintTop_toTopOf="@+id/foodQuantity" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/orderAcceptButton"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/accent_button"
+                android:text="ACCEPT"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="12sp"
+                android:textColor="@color/background"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/primaryContainer_highContrast" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "724928771036",
+    "project_id": "bitebuddy-17089",
+    "storage_bucket": "bitebuddy-17089.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724928771036:android:41312b500ed68e68d25519",
+        "android_client_info": {
+          "package_name": "com.ayein.bitebuddyadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLXeFHSWVQnFh1p2t7L4EMbXyWvnZbrIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
